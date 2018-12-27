@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ruwanfernandoCV.owl#"
+     xml:base="http://ruwanfernandoCV.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ruwanfernandoCV="http://ruwanfernandoCV.owl#">
+    <owl:Ontology rdf:about="http://ruwanfernandoCV.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#currently_working -->
+
+    <owl:ObjectProperty rdf:about="http://ruwanfernandoCV.owl#currently_working">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://ruwanfernandoCV.owl#mvv_Technology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://ruwanfernandoCV.owl#hasSkill">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://ruwanfernandoCV.owl#skills"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#studied_at -->
+
+    <owl:ObjectProperty rdf:about="http://ruwanfernandoCV.owl#studied_at">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://ruwanfernandoCV.owl#school"/>
+        <rdfs:range rdf:resource="http://ruwanfernandoCV.owl#universityCollege"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#studying_at -->
+
+    <owl:ObjectProperty rdf:about="http://ruwanfernandoCV.owl#studying_at">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://ruwanfernandoCV.owl#university"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#worked_at -->
+
+    <owl:ObjectProperty rdf:about="http://ruwanfernandoCV.owl#worked_at">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://ruwanfernandoCV.owl#enTrust&amp;Title(pvt)Ltd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#address -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#address">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#educationInstitute"/>
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#birthday -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#birthday">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#degreeName -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#degreeName">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#university"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#deplomaName -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#deplomaName">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#universityCollege"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#email -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#email">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#instituteName -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#instituteName">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#educationInstitute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#jobTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#jobTitle">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#organization"/>
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#mobileNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#mobileNumber">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#name">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#sex -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#sex">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skillLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#skillLevel">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#languageSkills"/>
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skillName -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#skillName">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#skills"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#workDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://ruwanfernandoCV.owl#workDuration">
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#mvv_Technology"/>
+        <rdfs:domain rdf:resource="http://ruwanfernandoCV.owl#enTrust&amp;Title(pvt)Ltd"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#educationInstitute -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#educationInstitute"/>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#languageSkills -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#languageSkills">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#mvv_Technology -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#mvv_Technology">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#organization -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#organization">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#workingExperience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#otherSkills -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#otherSkills">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#personalDetails -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#personalDetails"/>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#school -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#school">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#educationInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skills -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#skills"/>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#technicalSkills -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#technicalSkills">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#university -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#university">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#educationInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#universityCollege -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#universityCollege">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#educationInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#workingExperience -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#workingExperience"/>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#enTrust&amp;Title(pvt)Ltd -->
+
+    <owl:Class rdf:about="http://ruwanfernandoCV.owl#enTrust&amp;Title(pvt)Ltd">
+        <rdfs:subClassOf rdf:resource="http://ruwanfernandoCV.owl#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#oganization-mvv -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#oganization-mvv">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#mvv_Technology"/>
+        <jobTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Developer</jobTitle>
+        <workDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 year</workDuration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#personalDetails-ruwan -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#personalDetails-ruwan">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#personalDetails"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No 37/7 wawela Ja-ela</address>
+        <birthday rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1994-01-02</birthday>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anrcfenando@gmail.com</email>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P.D. Ruwan Chamara Fernando</name>
+        <sex rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</sex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#school-ssc -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#school-ssc">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#school"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">St Sebastian College , Kandana</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-lan-english -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-lan-english">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#languageSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluent</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English language proficiency</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-lan-sinhala -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-lan-sinhala">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#languageSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluent</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sinhala Language Proficiency</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-other-communication -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-other-communication">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#otherSkills"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpersonal Communication</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-other-leadership -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-other-leadership">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#otherSkills"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-other-responsibility -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-other-responsibility">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#otherSkills"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highly Responsible</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-other-teamwork -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-other-teamwork">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#otherSkills"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Work</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-angular -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-angular">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angular</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-angularjs -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-angularjs">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angularjs</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-asp.net -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-asp.net">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASP.net</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-html -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-html">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-java -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-java">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-javascript -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-javascript">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">85%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JavaScript</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-php -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-php">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">php</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#skill-tech-springboot -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#skill-tech-springboot">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#technicalSkills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SpringBoot</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#university-uok -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#university-uok">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#university"/>
+        <degreeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Engineering</degreeName>
+        <instituteName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Kelaniya</instituteName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#universityCollege-aquinas -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#universityCollege-aquinas">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#universityCollege"/>
+        <deplomaName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professional English</deplomaName>
+        <instituteName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquinas University College</instituteName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#workExperience-enTrust-intern -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#workExperience-enTrust-intern">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#enTrust&amp;Title(pvt)Ltd"/>
+        <workDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 moths</workDuration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#workExperience-mvv-developer -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#workExperience-mvv-developer">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#mvv_Technology"/>
+        <workDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 year</workDuration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ruwanfernandoCV.owl#organization-enTrust&amp;Title -->
+
+    <owl:NamedIndividual rdf:about="http://ruwanfernandoCV.owl#organization-enTrust&amp;Title">
+        <rdf:type rdf:resource="http://ruwanfernandoCV.owl#enTrust&amp;Title(pvt)Ltd"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">443/4 Malwaththa Rd, Rajagiriya 11222</address>
+        <jobTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intern</jobTitle>
+        <workDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 months</workDuration>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
